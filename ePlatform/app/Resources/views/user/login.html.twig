@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Log in{% endblock %}</title>
+    {% block stylesheets %}
+    <link href="{{ asset('http://fonts.googleapis.com/css?family=Pacifico') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/login.css') }}" rel="stylesheet">
+
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    {% endblock %}
+</head>
+<body>
+<div class="container">
+    <div class="login-form">
+        <h1 class="text-center">Log in</h1>
+        <div class="form-header">
+            <i class="fa fa-user"></i>
+        </div>
+
+        <form id="login-form" action="{{ path('security_login') }}" method="post" class="form-signin" role="form">
+            <input name="_username" id="email" type="email" class="form-control" placeholder="Email address" autofocus required="required">
+            <input name="_password" id="password" type="password" class="form-control" placeholder="Password" required="required">
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}"/>
+            <button class="btn btn-block bt-login" type="submit">Sign in</button>
+        </form>
+        <div class="form-footer">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <i class="fa fa-lock"></i>
+                    <a href=""> Forgot password? </a>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <i class="fa fa-check"></i>
+                    <a href="{{ path('user_register') }}"> Register </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="text-center well">
+            <a href="{{ path('blog_index') }}">Back to site</a>
+        </div>
+    </div>
+</div>
+{% block javascripts %}
+<script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
+<script src="{{ asset('assets/js/login.js') }}"></script>
+{% endblock%}
+</body>
+</html>

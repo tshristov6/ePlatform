@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}ePlatform|Electricity{% endblock %}</title>
+    {% block stylesheets %}
+
+        <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+
+
+        <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('https://fonts.googleapis.com/css?family=Montserrat:400,700') }}">
+        <link rel="stylesheet" href="{{ asset('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic') }}">
+
+
+        <link rel="stylesheet" href="{{ asset('vendor/magnific-popup/magnific-popup.css') }}">
+
+
+        <link rel="stylesheet" href="{{ asset('css/freelancer.min.css') }}">
+    {% endblock %}
+</head>
+{% block body %}
+    <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">ePlatform</a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded"
+                    type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ path('blog_index') }}">Home</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#theory">Тheory</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ path('user_profile') }}">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container">
+            <img class="img-fluid mb-5 d-block mx-auto" src="{{ asset('img/portfolio/bulb.png') }}" alt="">
+            <h1 class="text-uppercase mb-0">Electricity</h1>
+            <hr class="star-light">
+        </div>
+    </header>
+
+
+    <section id="theory" class="portfolio">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">Тheory</h2>
+            <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#elzarqd">
+                        <h3>Електричен заряд</h3>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#eltok">
+                        <h3>Електричен ток</h3>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#elsuprotivl">
+                        <h3>Електрично съпротивление</h3>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#elnapr">
+                        <h3>Електрично напрежение</h3>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#moshtnost">
+                        <h3>Мощност на електричния ток</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">Somewhere in Shumen, Bulgaria :)</p>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                                <i class="fab fa-fw fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                                <i class="fab fa-fw fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-uppercase mb-4">About ePlatfrom</h4>
+                    <p class="lead mb-0">ePlatform is a free to use physics web page for education.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+        <div class="container">
+            <small></small>
+        </div>
+    </div>
+
+
+    <div class="scroll-to-top d-lg-none position-fixed ">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+    <div class="portfolio-modal mfp-hide" id="elzarqd">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Електричен заряд</h2>
+                        <hr class="star-dark mb-5">
+                        <p class="mb-5">В центъра на всеки атом има ядро, чиито размери са много по-малки от самия атом.
+                            В състава на ядрото участват частици, наречени протони, които имат положителен електричен заряд.
+                            Затова и ядрото, като цяло, има положителен заряд. Около ядрото се движат друг вид частици - електрони.
+                            Електронът е най-малката частица в атома и има отрицателен заряд.</p>
+
+                        <p class="mb-5">Електричните заряди са два вида, които условно наричаме положителни /+/ и отрицателни /-/.
+                            Два положителни или два отрицателни заряда се отблъскват, а положителен и отрицателен заряд се привличат. </p>
+
+                        <p class="mb-5">Електричният заряд е физична величина, която се означава с буквата q.
+                            Единицата за електричен заряд се нарича кулон и се означава с главна буква С.</p>
+
+                        <p class="mb-5">Големината на електричния заряд на електрона се нарича елементарен електричен заряд.
+                            Това е най-малкият електричен заряд, който една частица или тяло може да има.<br/>
+                            <img src="{{ asset('img/portfolio/electricity/formula_zarqd.png') }}" width="300" height="100"/>
+                        </p>
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal mfp-hide" id="eltok">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Електричен ток</h2>
+                        <hr class="star-dark mb-5">
+                        <p class="mb-5">Насоченото движение на електроните през електрическа верига наричаме електричен ток.
+                            Електричен ток протича само в затворена електрическа верига. </p>
+
+                        <p class="mb-5">Електричният ток се характеризира количествено с физичната величина, която също се нарича електричен ток. Бележи се с буквата I.
+                            Електричният ток е равен на заряда, преминал през напречното сечение на проводника за една сакунда.  </p>
+
+                        <p class="mb-5">Единицата за електричен ток се нарича ампер. Бележи се с буквата А.
+                            От формулата I=U/R следва, че токът I = 1A, ако за време t = 1s през напречното сечение на проводника преминава заряд q = 1C.
+                        <img src="{{ asset('img/portfolio/electricity/eltok.png') }}" height="70" width="300"/>
+                        </p>
+
+                        <p class="mb-5">Електричният ток се измерва с уред, наречен амперметър. Амперметърът се свързва последователно в електричната верига.
+                            Когато през амперметъра тече ток, стрелката му се отклонява и сочи върху скалата на уреда стойността на тока.<br/>
+                        </p>
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal mfp-hide" id="elsuprotivl">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Електрично съпротивление</h2>
+                        <hr class="star-dark mb-5">
+                        <p class="mb-5">Електричното съпротивление характеризира свойството на проводниците да се противопоставят на електричния ток (добрите проводници имат малко съпротивление).
+                            За проводниците с постоянно съпротивление е в сила законът на Ом.<br/>
+                        <img src="{{ asset('img/portfolio/electricity/elsupr.png') }}" width="300" height="150"/>
+                        </p>
+
+                        <p class="mb-5">Единицата за електрично съпротивление се нарича ом и се означава с гръцката буква Ω (омега).
+                            Съпротивлението на даден проводник е R = 1 Ω, ако при напрежение U = 1V по проводника тече ток I = 1A.<br/>
+                            <img src="{{ asset('img/portfolio/electricity/elsupr2.png') }}" height="70" width="300"/>
+                        </p>
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal mfp-hide" id="elnapr">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Електрично напрежение</h2>
+                        <hr class="star-dark mb-5">
+                        <p class="mb-5">Електричното напрежение е мярка за енергията, която всеки електрон отдава на консуматора. <br/>
+                        </p>
+
+                        <p class="mb-5">Физичната величина електрично напрежение или за по – кратко само напрежение се означава с буквата U.<br/>
+                        </p>
+
+                        <p>Напрежението се измерва с уред, наречен волтметър. Той се свързва успоредно в електричната верига.
+                            Двете букси на волтметъра се свързват с проводници към двата края на консуматора, напрежението върху който трябва да се измери. </p>
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal mfp-hide" id="moshtnost">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Мощност на електрчиния ток</h2>
+                        <hr class="star-dark mb-5">
+                        <p class="mb-5">Мощността на консуматора е енергията, която той преобразува за единица време (1 секунда).
+                            В консуматорите електроенергията се преобразува в друг вид енергия (напр. толинна). <br/>
+                            <img src="{{ asset('img/portfolio/electricity/moshtnost.png') }}" width="350" height="100"/>
+                        </p>
+
+                        <p class="mb-5">Единицата за мощност се нарича ват в чест на шотландския изобретател Джеймс Уат. Кратните единици за мощност са: <br/>
+                            <img src="{{ asset('img/portfolio/electricity/moshtnost1.png') }}" width="350" height="150"/>
+                        </p>
+
+                        <p>Единицата за електрична енергия се нарича джаул в чест на английския физик Джеймс Джаул.
+                            Означава се с главна буква J. В практиката често се използват кратните единици за енергия килоджаул (kJ) и мегаджаул (MJ). <br/>
+                            <img src="{{ asset('img/portfolio/electricity/moshtnost2.png') }}" width="350" height="150"/>
+                        </p>
+
+                        <p>Двамата физици Джаул и Ленц установяват чрез опити, че отделената в един проводник топлина Q зависи от съпротивление R на проводника от тока I през него и от времето t на протичането му.
+                            Зависимостта носи названието закон на Джаул-Ленц и се иразява с формулата: <br/>
+                            <img src="{{ asset('img/portfolio/electricity/moshtnost3.png') }}" width="350" height="150"/>
+                        </p>
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    {% block javascripts %}
+
+        <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+        <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+
+        <script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+        <script src="{{ asset('vendor/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+
+
+        <script src="{{ asset('js/jqBootstrapValidation.js') }}"></script>
+        <script src="{{ asset('js/contact_me.js') }}"></script>
+
+
+        <script src="{{ asset('js/freelancer.min.js') }}"></script>
+    {% endblock %}
+
+    </body>
+{% endblock %}
+</html>

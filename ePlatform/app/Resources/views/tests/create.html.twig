@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Tests{% endblock %}</title>
+    {% block stylesheets %}
+        <link href="{{ asset('profile/assets/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('profile/assets/css/datepicker3.css') }}" rel="stylesheet">
+        <link href="{{ asset('profile/assets/css/styles.css') }}" rel="stylesheet">
+
+        <!--Icons-->
+        <script src="{{ asset('profile/assets/js/lumino.glyphs.js') }}"></script>
+    {% endblock %}
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ path('user_profile') }}"><span>Profile</span>Page</a>
+            <ul class="user-menu">
+                <li class="dropdown pull-right">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg><span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                       <li><a href="{{ path('security_logout') }}"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+    <form role="search">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+        </div>
+    </form>
+    <ul class="nav menu">
+        <li><a href="{{ path('user_profile') }}"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Профил</a></li>
+        <li ><a href="{{ path('tests') }}"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Тестове</a></li>
+        <li><a href="{{ path('myTests') }}" ><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Моите тестове</a></li>
+        <li class="active"><a href="{{ path('test_create') }}" ><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Създай тест</a></li>
+        <li><a href="{{ path('blog_index') }}"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Към сайта</a></li>
+    </ul>
+</div><!--/.sidebar-->
+
+<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+            <li class="active">Тестове</li>
+            <div class="form-group">
+            </div>
+        </ol>
+    </div>
+    <br>
+    <center><h2>Създай тест</h2></center>
+    <div class="container body-content span=8 offset=2">
+        <div class="well">
+            <form class="form-horizontal" enctype="multipart/form-data" action="{{ path('test_create') }}" method="POST">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="article_title">Test Title</label>
+                        <div class="col-sm-4 ">
+                            <input type="text" class="form-control" id="article_title" placeholder="Post Title"
+                                   name="test[title]">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="article_content">Content</label>
+                        <div class="col-sm-6">
+                        <textarea class="form-control" rows="6" id="article_content"
+                                  name="test[content]"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="article_image">Image</label>
+                        <div class="col-sm-4 ">
+                            <input type="file" accept=".jpg, .png" class="form-control" id="article_image" placeholder="Image"
+                                   name="test[image]">
+                        </div>
+                    </div>
+
+                    {{ form_row(form._token) }}
+
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-4">
+                            <a class="btn btn-default" href="{{ path('user_profile') }}">Cancel</a>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+{% block javascripts %}
+    <script src="{{ asset('profile/assets/js/jquery-1.11.1.min.js') }}"></script>
+    <script src="{{ asset('profile/assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('profile/assets/js/chart.min.js') }}"></script>
+    <script src="{{ asset('profile/assets/js/chart-data.js') }}"></script>
+    <script src="{{ asset('profile/assets/js/easypiechart.js') }}"></script>
+    <script src="{{ asset('profile/assets/js/easypiechart-data.js') }}"></script>
+    <script src="{{ asset('profile/assets/js/bootstrap-datepicker.js') }}"></script>
+{% endblock %}
+</body>
+
+</html>
