@@ -46,9 +46,9 @@
         </div>
     </form>
     <ul class="nav menu">
-        <li class="active"><a href="{{ path('user_profile') }}"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Профил</a></li>
+        <li ><a href="{{ path('user_profile') }}"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Профил</a></li>
         <li><a href="{{ path('tests') }}"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Тестове</a></li>
-        <li><a href="{{ path('experiments') }}" ><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Експеримети</a></li>
+        <li class="active"><a href="{{ path('experiments') }}" ><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Експеримети</a></li>
         <li><a href="{{ path('blog_index') }}"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Към сайта</a></li>
     </ul>
 </div><!--/.sidebar-->
@@ -57,13 +57,15 @@
     <div class="row">
         <ol class="breadcrumb">
             <li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-            <li class="active">Профил</li>
+            <li class="active">Експерименти</li>
             <div class="form-group">
             </div>
         </ol>
     </div>
     <br>
-    <center><h2>Добре дошли, {{ user.fullName }}!</h2></center>
+    <p><a href="https://ggbm.at/NoRr4gzQ" target="_blank"> Електричество</a></p><br/>
+    <p><a  href="https://ggbm.at/Ry4MrB5x" target="_blank">Механика</a></p><br/>
+    <p><a  href="https://ggbm.at/VVVJc4yT" target="_blank">Оптика</a></p><br/>
 </div>
 
 
