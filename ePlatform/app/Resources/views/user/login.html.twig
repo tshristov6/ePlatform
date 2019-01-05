@@ -31,19 +31,17 @@
         <div class="form-footer">
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
-                    <i class="fa fa-lock"></i>
-                    <a href=""> Forgot password? </a>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
                     <i class="fa fa-check"></i>
                     <a href="{{ path('user_register') }}"> Register </a>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <i class="fa fa-lock"></i>
+                    <a href="{{ path('blog_index') }}">Back to site</a>
                 </div>
 
             </div>
         </div>
-        <div class="text-center well">
-            <a href="{{ path('blog_index') }}">Back to site</a>
-        </div>
+
     </div>
 </div>
 {% block javascripts %}

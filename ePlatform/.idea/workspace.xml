@@ -45,25 +45,42 @@
     <favorites_list name="ePlatform" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="334">
               <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
               <folding>
                 <element signature="e#41#67#0#PHP" expanded="true" />
-                <element signature="e#1815#1839#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/tests/create.html.twig">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/index/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="74" column="104" selection-start-line="74" selection-start-column="104" selection-end-line="74" selection-end-column="104" />
+            <state relative-caret-position="357">
+              <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/user/login.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="39" column="22" selection-start-line="36" selection-start-column="16" selection-end-line="39" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/user/register.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -118,7 +135,6 @@
         <option value="$PROJECT_DIR$/web/js/contact_me.js" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/web/css/profile.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/user/register.html.twig" />
         <option value="$PROJECT_DIR$/web/profile/assets/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/web/profile/assets/css/styles.css" />
         <option value="$PROJECT_DIR$/src/AppBundle/ProjectController.php" />
@@ -130,7 +146,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/tests/view.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/tests/myTests.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/TestController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/user/login.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/projects/electricity.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/projects/mechanics.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/projects/optics.html.twig" />
@@ -138,12 +153,14 @@
         <option value="$PROJECT_DIR$/app/Resources/views/tests/delete.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/tests/tests.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/ProfileController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/index/index.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/ExperimentController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/profile.html.twig" />
         <option value="E:/Xampp/htdocs/ePlatform/Login/experiments.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/experiments.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/tests/create.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/user/login.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/user/register.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/index/index.html.twig" />
       </list>
     </option>
   </component>
@@ -237,7 +254,18 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ePlatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ePlatform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ePlatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ePlatform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -257,18 +285,18 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Data\Projects\ePlatform\app\Resources\views\user" />
-      <recent name="E:\Data\Projects\ePlatform\src\AppBundle\Controller" />
-      <recent name="E:\Data\Projects\ePlatform\web\img\portfolio\electricity" />
-      <recent name="E:\Data\Projects\ePlatform\web\img\portfolio" />
-      <recent name="E:\Data\Projects\ePlatform\app\Resources\views\tests" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Data\Projects\ePlatform\src\AppBundle\Controller" />
       <recent name="E:\Data\Projects\ePlatform\web" />
       <recent name="E:\Data\Projects\ePlatform\app" />
       <recent name="E:\Data\Projects\ePlatform\app\Resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Data\Projects\ePlatform\web\img" />
+      <recent name="E:\Data\Projects\ePlatform\app\Resources\views\user" />
+      <recent name="E:\Data\Projects\ePlatform\src\AppBundle\Controller" />
+      <recent name="E:\Data\Projects\ePlatform\web\img\portfolio\electricity" />
+      <recent name="E:\Data\Projects\ePlatform\web\img\portfolio" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -321,16 +349,18 @@
       <workItem from="1546178555306" duration="2344000" />
       <workItem from="1546352026993" duration="4343000" />
       <workItem from="1546539519585" duration="1650000" />
+      <workItem from="1546618960620" duration="903000" />
+      <workItem from="1546677031725" duration="597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73857000" />
+    <option name="totallyTimeSpent" value="75357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49759614" visible="true" weight="0.23298033" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49759614" visible="true" weight="0.24054463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50240386" side_tool="true" weight="0.22919819" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -362,13 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/user/register.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" column="112" selection-start-line="32" selection-start-column="112" selection-end-line="32" selection-end-column="131" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/SecurityController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -376,13 +399,6 @@
           <folding>
             <element signature="e#40#66#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/user/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -510,13 +526,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ProfileController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/index/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2108">
-          <caret line="124" column="41" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -678,21 +687,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-          <folding>
-            <element signature="e#41#67#0#PHP" expanded="true" />
-            <element signature="e#1815#1839#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/tests/create.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="74" column="104" selection-start-line="74" selection-start-column="104" selection-end-line="74" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+          <folding>
+            <element signature="e#41#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/user/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="39" column="22" selection-start-line="36" selection-start-column="16" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/user/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/index/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
         </state>
       </provider>
     </entry>
